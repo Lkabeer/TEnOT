@@ -61,6 +61,24 @@ a {
   background-size: cover;
   z-index: 0; }
 
+.carousel h3 {
+  position: absolute;
+  left: -20%;
+  background: rgba(168, 169, 173, 0.42);
+  padding: 20px;
+  float: left;
+  font-size: 3em;
+  bottom: 320%; }
+
+.carousel p {
+  position: absolute;
+  left: 0%;
+  background: rgba(168, 169, 173, 0.42);
+  padding: 20px;
+  float: left;
+  font-size: 2em;
+  bottom: 120%; }
+
 header {
   background-color: rgba(255, 255, 255, 0.82);
   padding: 6px 0 6px 0;
