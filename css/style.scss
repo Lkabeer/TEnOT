@@ -1,1 +1,96 @@
 /* Scss Document X-Team */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+
+$font-main: 'Roboto', sans-serif;
+$font-highlight: 'Oswald', sans-serif;
+
+body {
+	font-family: $font-main;
+}
+
+.header-top-menu {
+	font-size: 12px;
+}
+
+.header-top-phone {
+	a {
+		font-size: 16px ;
+		font-family: $font-main !important;
+	}
+
+}
+
+.header-top-search {
+	input {
+		border-radius: 27px !important;
+		border: none;
+		color: #000 !important;
+		float: left;
+		margin: 0;
+		width: 99%;
+		
+		&:focus + span {
+			z-index: 3;
+		}
+	}
+	
+	button {
+		border: 0;
+		background: none;
+		padding: 2px 5px;
+		margin-top: 2px;
+		position: relative;
+		top: -2px;
+		left: -28px;
+		margin-bottom: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		
+		&:hover, &:focus, &:active, &:active:hover {
+			background-color: transparent;
+			border-color: transparent;		
+		}
+	}
+}
+
+
+// navbar X-Team Start
+.navX {
+	.navbar-brand {
+		padding: 0px 15px;
+	}
+	
+	li > a {
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+	
+	.navbar-nav>li>.dropdown-menu {
+		display: none;
+	}
+
+	.dropdown-menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
+		display: none;
+		float: right;
+		min-width: 260px;
+		padding: 15px 0px;
+		margin: 2px 0 0;
+		font-size: 14px;
+		text-align: left;
+		list-style: none;
+		background-color: #292929;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0,0,0,.15);
+		border-radius: 4px;
+		-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		border-radius: 8px;
+	}
+}
