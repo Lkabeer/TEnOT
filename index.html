@@ -8,8 +8,12 @@
     <title>TE&amp;OT Group | Home</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ihover.css">
+    <link rel="stylesheet" href="css/ihover.min.css">
+    <link rel="stylesheet" href="css/sky-tabs.css">
 <!--    <link rel="stylesheet" href="css/animate.css">-->
 	<link href="css/bootstrap.css" rel="stylesheet">
+<!--	<link rel="stylesheet" href="css/styleSlideShow.css">-->
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,10 +23,30 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
   </head>
-  <body>
+<body>
+	<ul class="slideshow">
+		<li>
+			<span style="background-image: url(images/slideShow1.jpg);">
+			   <h3>We Care About You !</h3>
+			   <h4>Wherever you are we can help</h4>
+			</span> 
+		</li>		
+		<li>
+			<span style="background-image: url(images/slideShow2.jpg);">
+			   <h3>Unified Communication</h3>
+			   <h4>No fear - Blend with your new society!</h4>
+			</span> 
+		</li>	
+		<li>
+			<span style="background-image: url(images/slideShow3.jpg);">
+			   <h3>We listen to our client needs</h3>
+			   <h4>Yes We Do !</h4>
+			</span> 
+		</li>
+	</ul>
 	<div class="container-fluid" id="pageX">
-	  <header class="row">
-	    <div class="col-lg-10 col-lg-offset-1">
+      <header class="row">
+        <div class="col-lg-10 col-lg-offset-1">
           <div class="row header-top">
             <div class="col-lg-12">
               <div class="header-top-phone pull-right"> <a href="tel:8887266196" class="btn btn-link"> <i class="fa fa-phone"> </i> 888-726-6196</a> <a href="#" class="btn btn-link"> <i class="fa fa-user-plus"></i></a></div>
@@ -37,9 +61,9 @@
               </div>
               <div class="header-top-menu pull-right">
                 <ul>
-                  <li class="btn btn-link">FAQ</li>
-                  <li class="btn btn-link">Site map</li>
-                  <li class="btn btn-link">Home</li>
+                  <li class="btn btn-link"><a href="#">Home</a></li>
+                  <li class="btn btn-link"><a href="#">Site map</a></li>
+                  <li class="btn btn-link"><a href="#">FAQ</a></li>
                 </ul>
               </div>
             </div>
@@ -49,47 +73,95 @@
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.html">
-                	<img src="images/logoMenu.png" alt="" class="img-responsive">
-                </a></div>
+                <a class="navbar-brand" href="index.html"> <img src="images/logoMenu.png" alt="" class="img-responsive"> </a></div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="defaultNavbar1">
                 <ul class="nav navbar-nav">
-                  
-                  <li>
-                  	<a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">TE&amp;OT Group</a>
-                  	<ul class="dropdown-menu withimg" role="menu">
-                        <i class="fa fa-eject"></i>
-                        <li>
-                        	<a class="bu-navz" href="about.html">About Us
-                        		<img src="images/aboutUs.png" class="logo img-responsive" alt="Responsive image">
-                        	</a> 
-                        </li>
-                        <li>
-                        	<a class="bu-navz" href="mission.html">Mission
-                          		<img src="images/mission.jpg" class="logo img-responsive" alt="Responsive image">
-                        	</a>
-                        </li>
-                        <li>
-                        	<a class="bu-navz" href="vision.html">Vision
-                        		<img src="images/vision.jpg" class="logo img-responsive" alt="Responsive image">
-                        	</a>
-                        </li>
-                      </ul>
+                  <li class="topLevelX"> <a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">TE&amp;OT Group</a>
+                    <ul class="dropdown-menu withimg" role="menu">
+                      <li> <a class="bu-navz" href="about.html">About Us <img src="images/aboutUs.png" class="logo img-responsive" alt="Responsive image"> </a> </li>
+                      <li> <a class="bu-navz" href="mission.html">Mission <img src="images/mission.jpg" class="logo img-responsive" alt="Responsive image"> </a> </li>
+                      <li> <a class="bu-navz" href="vision.html">Vision <img src="images/vision.jpg" class="logo img-responsive" alt="Responsive image"> </a> </li>
+                    </ul>
+                  </li>
+                  <li class="topLevelX"> <a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">Mobility Support Services</a>
+                    <ul class="dropdown-menu withimg" role="menu">
+                      <li> <a class="bu-navz" href="about.html">Family <img src="images/family.jpg" class="logo img-responsive" alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="mission.html">Corporate <img src="images/corporate.jpg" class="logo img-responsive" alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="vision.html">Government <img src="images/government.jpg" class="logo img-responsive" alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="vision.html">Society <img src="images/society.jpg" class="logo img-responsive" alt="Responsive image"></a></li>
+                    </ul>
+                  </li>
+                  <li class="topLevelX"> <a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">Insights and Resources</a>
+                    <ul class="dropdown-menu withimg" role="menu">
+                      <li> <a class="bu-navz" href="about.html">About Us <img src="images/aboutUs.png" class="logo img-responsive" alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="mission.html">Mission <img src="images/mission.jpg" class="logo img-responsive" alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="vision.html">Vision <img src="images/vision.jpg" class="logo img-responsive" alt="Responsive image"></a></li>
+                    </ul>
+                  </li>
+                  <li class="topLevelX"> <a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">Contact us</a>
+                    <ul class="dropdown-menu withimg" role="menu">
+                      <li> <a class="bu-navz" href="about.html">Team <img src="images/aboutUs.png" class="logo img-responsive" alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="mission.html">Careers <img src="images/mission.jpg" class="logo img-responsive" alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="vision.html">Locations <img src="images/vision.jpg" class="logo img-responsive" alt="Responsive image"></a></li>
+                    </ul>
                   </li>
                 </ul>
-</div>
+              </div>
               <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
           </nav>
         </div>
       </header>
-	</div>
+      <footer class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="row">
+            <div class="col-lg-3">
+            	<a href="#">
+            		<img src="images/map.gif" class="" alt="TE & OT map"> TE&amp;OT Worldwide
+            	</a>
+            </div>
+            <div class="col-lg-3">
+            	<ul>
+					<li>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</li>
+				</ul>
+            </div>
+            <div class="col-lg-3">
+              <ul class="partners-ul">
+					<li>
+						<a>Partners</a>
+						<div class="partner-dropup">
+							<div class="partners-carousel-title">Coming Soon</div>
+							<div id="owl_example" class="owl-carousel" style="opacity: 0;">
+							</div>
+						</div>
+					</li>
+				</ul>
+            </div>
+            <div class="col-lg-3 text-right">
+            	<p class="rights">© 2017 All Rights Reserved TE&amp;OT.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<script src="js/bootstrap.js"></script>
+	<script src="js/head.js"></script>
+    <!--chat X-Team Start-->
+        <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'e87ada04-74d6-4b98-b10a-f2ba969f17a6', f: true }); done = true; } }; })();</script>
+    <!--chat X-Team end-->
   </body>
 </html>
