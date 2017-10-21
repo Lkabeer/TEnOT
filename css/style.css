@@ -9,6 +9,9 @@ body {
   margin: 0;
   padding: 0; }
 
+.b-0 {
+  padding-right: 0; }
+
 a {
   color: #337ab7;
   text-decoration: none; }
@@ -62,6 +65,7 @@ a {
   z-index: 0; }
 
 .carousel h3 {
+  width: 100%;
   position: absolute;
   left: -20%;
   background: rgba(168, 169, 173, 0.42);
@@ -69,15 +73,26 @@ a {
   float: left;
   font-size: 3em;
   bottom: 320%; }
+  @media (max-width: 768px) {
+    .carousel h3 {
+      font-size: 2em;
+      left: 0;
+      bottom: 350%; } }
 
 .carousel p {
+  width: 100%;
   position: absolute;
   left: 0%;
   background: rgba(168, 169, 173, 0.42);
   padding: 20px;
   float: left;
-  font-size: 2em;
+  font-size: 1.5em;
   bottom: 120%; }
+  @media (max-width: 768px) {
+    .carousel p {
+      font-size: 1.2em;
+      left: 0;
+      bottom: 120%; } }
 
 header {
   background-color: rgba(255, 255, 255, 0.82);
@@ -94,7 +109,8 @@ header {
   .header-top-menu li:hover {
     text-decoration: none; }
   .header-top-menu ul {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    padding-left: 0; }
   .header-top-menu ul li a {
     text-decoration: none;
     font-size: 13px;
@@ -151,7 +167,10 @@ header {
     background-color: transparent;
     border-color: transparent; }
   .navX .navbar-brand {
-    padding: 0px 15px; }
+    padding: 0px 15px;
+    height: auto; }
+  .navX .navbar-toggle.collapsed {
+    margin-top: 18px; }
   .navX .topLevelX > a {
     padding-top: 26px !important;
     padding-bottom: 26px !important; }
@@ -166,14 +185,16 @@ header {
   .navX .navbar-nav li a:hover {
     color: #1d8cda;
     background: #292929; }
-  .navX .nav > li > a:focus, .navX .nav > li > a:hover {
+  .navX .nav > li > a:focus, .navX .nav > li > a:hover, .navX .nav > li > a:focus {
     background: none;
-    outline: none; }
+    outline: none;
+    background-color: none; }
   .navX .navbar-nav > li > .dropdown-menu {
     display: none; }
   .navX .navbar-nav > li:hover > .dropdown-menu {
     display: block;
-    border-radius: 8px; }
+    border-radius: 8px;
+    background-color: #292929; }
   .navX .navbar-nav > li:hover > .dropdown-menu li {
     padding: 7px 0; }
   .navX .navbar-nav > li:hover > .dropdown-menu li a {
@@ -195,6 +216,9 @@ header {
     padding: 20px;
     top: 0;
     border-radius: 8px; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent; }
 
 footer {
   background: rgba(62, 62, 62, 0.63);

@@ -7,6 +7,12 @@ $font-highlight: 'Oswald', sans-serif;
 $color-main: #337ab7;
 $color-secondary: #ec509a;
 
+@mixin break($length) {
+	@media (max-width: $length) {
+		@content;
+	}
+}
+
 html, body {
 	height: 100%;
     position:relative;
@@ -20,6 +26,10 @@ body {
 
 .pageX {
 
+}
+
+.b-0 {
+	padding-right: 0;
 }
 
 a {
@@ -80,6 +90,7 @@ a {
 }
 
 .carousel h3 {
+	width: 100%;
     position: absolute;
     left: -20%;
     background: rgba(168, 169, 173, 0.42);
@@ -87,15 +98,28 @@ a {
     float: left;
     font-size: 3em;
     bottom: 320%;
+	
+	@include break(768px) {
+		font-size: 2em;
+		left: 0;
+		bottom: 350%;
+	}
 }
 .carousel p {
+	width: 100%;
     position: absolute;
     left: 0%;
     background: rgba(168, 169, 173, 0.42);
     padding: 20px;
     float: left;
-    font-size: 2em;
+    font-size: 1.5em;
     bottom: 120%;
+		
+	@include break(768px) {
+		font-size: 1.2em;
+		left: 0;
+		bottom: 120%;
+	}
 }
 //slideshow X-Team end
 
@@ -105,6 +129,12 @@ header {
     z-index: 1000000;
     position: relative;
     border-bottom: 3px solid rgba(0, 0, 0, 0.22);
+}
+
+.header-top {
+	div > div {
+//		display: inline-block;
+	}
 }
 
 .header-top-menu {
@@ -121,6 +151,7 @@ header {
 	
 	ul {
 		margin-bottom: 0px;
+		padding-left: 0;
 	}
 	
 	ul li a {
@@ -206,7 +237,12 @@ header {
 
     .navbar-brand {
         padding: 0px 15px;
+		height: auto;
     }
+	
+	.navbar-toggle.collapsed  {
+		margin-top: 18px;
+	}
 
     .topLevelX > a {
         padding-top: 26px !important;
@@ -228,9 +264,10 @@ header {
         background: #292929;
     }
 
-    .nav>li>a:focus, .nav>li>a:hover {
+    .nav>li>a:focus, .nav>li>a:hover, .nav>li>a:focus {
         background: none;
         outline: none;
+		background-color: none;
     }
 
     .navbar-nav>li>.dropdown-menu {
@@ -239,6 +276,7 @@ header {
     .navbar-nav>li:hover>.dropdown-menu {
         display: block;
         border-radius: 8px;
+		background-color: #292929;
     }
     .navbar-nav>li:hover>.dropdown-menu li {
         padding: 7px 0;
@@ -274,6 +312,10 @@ header {
         border-radius: 8px;
     }
     //menu style end
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: transparent;
 }
 
 footer {
