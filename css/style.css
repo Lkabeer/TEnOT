@@ -9,12 +9,27 @@ body {
   margin: 0;
   padding: 0; }
 
-.b-0 {
+#masterX #pageX {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backtround-size: cover; }
+
+.pr-0 {
   padding-right: 0; }
+
+.p-0 {
+  padding: 0; }
+
+.m-0 {
+  margin: 0; }
 
 a {
   color: #337ab7;
   text-decoration: none; }
+  a:hover {
+    color: #ec509a;
+    text-decoration: none; }
 
 .dropdown-menu {
   position: absolute;
@@ -220,43 +235,44 @@ header {
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
   background-color: transparent; }
 
-footer {
+#footerHome {
   background: rgba(62, 62, 62, 0.63);
   bottom: 0;
-  position: absolute;
   z-index: 100;
   width: 100%;
   padding: 10px 0 4px 0; }
-  footer a {
+  #footerHome.footerHomeX {
+    position: absolute; }
+  #footerHome a {
     text-decoration: none;
     text-align: right;
     font-size: 13px;
     color: #fff;
     line-height: 37px; }
-  footer a img {
+  #footerHome a img {
     padding: 10px;
     display: inline-block; }
-  footer a:hover, footer a:focus, footer a:active {
+  #footerHome a:hover, #footerHome a:focus, #footerHome a:active {
     color: #ec509a;
     text-decoration: none !important; }
-  footer ul {
+  #footerHome ul {
     list-style: none;
     text-align: center;
     padding-left: 0; }
-  footer ul li {
+  #footerHome ul li {
     display: inline-block;
     margin: 0 10px; }
-  footer ul li a {
+  #footerHome ul li a {
     font-size: 16px;
     transition: .3s; }
-  footer .partners-ul {
+  #footerHome .partners-ul {
     position: relative;
     list-style: none;
     text-align: center; }
-  footer .partners-ul li {
+  #footerHome .partners-ul li {
     text-align: center;
     display: inline-block; }
-  footer .partners-ul li .partner-dropup {
+  #footerHome .partners-ul li .partner-dropup {
     display: none;
     position: fixed;
     opacity: 0;
@@ -267,24 +283,36 @@ footer {
     border-radius: 8px;
     padding: 50px 0 5px;
     border: 1px solid #131313; }
-  footer .partners-carousel-title {
+  #footerHome .partners-carousel-title {
     text-align: center;
     color: #FFF;
     font-size: 18px;
     margin-bottom: 20px; }
-  footer .owl-carousel {
+  #footerHome .owl-carousel {
     display: none;
     position: relative;
     width: 100%;
     -ms-touch-action: pan-y; }
-  footer .partners-ul li:hover .partner-dropup {
+  #footerHome .partners-ul li:hover .partner-dropup {
     display: block;
     opacity: 1;
     bottom: 0px;
     left: 0;
     z-index: 99999999999999999; }
-  footer p {
+  #footerHome p {
     text-decoration: none;
     font-size: 13px;
     color: #fff;
     line-height: 37px; }
+
+#moving-monuments {
+  position: relative;
+  width: 100%;
+  background-image: url("../images/monumentsBg.png");
+  background-position: center;
+  background-repeat: repeat-x; }
+  #moving-monuments + div {
+    background-color: #292929; }
+
+#footer-content {
+  color: #fff; }

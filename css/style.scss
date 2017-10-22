@@ -6,6 +6,7 @@ $font-highlight: 'Oswald', sans-serif;
 
 $color-main: #337ab7;
 $color-secondary: #ec509a;
+$color-gray: #292929;
 
 @mixin break($length) {
 	@media (max-width: $length) {
@@ -24,17 +25,33 @@ body {
 	padding: 0;
 }
 
-.pageX {
-
+#masterX #pageX {
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backtround-size: cover;
 }
 
-.b-0 {
+.pr-0 {
 	padding-right: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0;
 }
 
 a {
     color: $color-main;
     text-decoration: none;
+
+    &:hover {
+        color: $color-secondary;
+        text-decoration: none;
+    }
 }
 
 .dropdown-menu {
@@ -123,6 +140,7 @@ a {
 }
 //slideshow X-Team end
 
+// header x-team start
 header {
     background-color: rgba(255, 255, 255, 0.82);
     padding: 6px 0 6px 0;
@@ -224,7 +242,7 @@ header {
         }
     }
 }
-
+// header x-team end
 
 // navbar X-Team Start
 .navX {
@@ -317,14 +335,19 @@ header {
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
 	background-color: transparent;
 }
+// navbar X-Team end
 
-footer {
+// footer X-Team Home start
+#footerHome {
     background: rgba(62, 62, 62, 0.63);
     bottom: 0;
-    position: absolute;
     z-index: 100;
     width: 100%;
     padding: 10px 0 4px 0;
+    
+    &.footerHomeX {
+        position: absolute;
+    }
 
 	a {
 		text-decoration: none;
@@ -408,3 +431,23 @@ footer {
 		line-height: 37px;
 	}
 }
+// footer X-Team Home end
+
+
+// footer X-Team Master start
+#moving-monuments {
+    position: relative;
+    width: 100%;
+    background-image: url("../images/monumentsBg.png");
+    background-position: center;
+    background-repeat: repeat-x;
+    
+    & + div {
+        background-color: $color-gray;
+    }
+}
+
+#footer-content {
+    color: #fff;
+}
+// footer X-Team Master end 
