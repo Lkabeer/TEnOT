@@ -1,6 +1,4 @@
 /* Scss Document X-Team */
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
-
 $font-main: 'Roboto', sans-serif;
 $font-highlight: 'Oswald', sans-serif;
 
@@ -44,6 +42,11 @@ body {
     margin: 0;
 }
 
+h3 {
+	color: $color-main;
+	margin-bottom: 14px;
+}
+
 a {
     color: $color-main;
     text-decoration: none;
@@ -52,6 +55,10 @@ a {
         color: $color-secondary;
         text-decoration: none;
     }
+}
+
+.img-responsive {
+	width: 100%;
 }
 
 .dropdown-menu {
@@ -451,3 +458,40 @@ header {
     color: #fff;
 }
 // footer X-Team Master end 
+
+// bodyX X-Team Master start 
+.bodyX {
+	.row {
+		margin: 0;
+	}
+	
+	// bodyHeader X-Team Master start 
+	.bodyHeader {
+		margin-bottom: 10px;
+		
+		div {
+			background: #F1F1F1 url('../images/aboutHeader.jpg') center/cover no-repeat;
+			padding: 60px 0;
+			text-align: center;
+			color: #FFFFFF;
+
+			h1 {
+				margin: 0;
+				font-size: 30px;
+			}
+		}
+	}
+	
+	.bodyBody {
+		h3 ~ p {
+			font-size: 16px;
+			line-height: 1.6;
+		}
+		
+		.img-main {
+			margin-top: 40px;
+		}
+	}
+	// bodyHeader X-Team Master end 
+}
+// bodyX X-Team Master end 
