@@ -8,14 +8,15 @@
    	<!-- TemplateBeginEditable name="doctitle" -->
    	<title>TE&amp;OT Group | Home</title>
    	<!-- TemplateEndEditable -->
+   	
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" media="print" onload="if(media!='all')media='all'">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" media="print" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="if(media!='all')media='all'">
-<!--      <link rel="stylesheet" href="css/animate.css">-->
+    	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/accordion.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="print" onload="if(media!='all')media='all'">
 	<link rel="stylesheet" href="css/style.css" media="print" onload="if(media!='all')media='all'">
 	
-
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -69,24 +70,24 @@
                   </li>
                   <li class="topLevelX"> <a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">Mobility Support Services</a>
                     <ul class="dropdown-menu withimg" role="menu">
-                      <li> <a class="bu-navz" href="../about.html">Family <img src="../images/family.jpg" alt="Responsive image" class="logo"></a></li>
-                      <li> <a class="bu-navz" href="../mission.html">Corporate <img src="../images/corporate.jpg" alt="Responsive image" class="logo"></a></li>
-                      <li> <a class="bu-navz" href="../vision.html">Government <img src="../images/government.jpg" alt="Responsive image" class="logo"></a></li>
-                      <li> <a class="bu-navz" href="../vision.html">Society <img src="../images/society.jpg" alt="Responsive image" class="logo"></a></li>
+                      <li> <a class="bu-navz" href="../family.html">Family <img src="../images/family.jpg" alt="Responsive image" class="logo"></a></li>
+                      <li> <a class="bu-navz" href="../corporate.html">Corporate <img src="../images/corporate.jpg" alt="Responsive image" class="logo"></a></li>
+                      <li> <a class="bu-navz" href="../government.html">Government <img src="../images/government.jpg" alt="Responsive image" class="logo"></a></li>
+                      <li> <a class="bu-navz" href="../society.html">Society <img src="../images/society.jpg" alt="Responsive image" class="logo"></a></li>
                     </ul>
                   </li>
-                  <li class="topLevelX"> <a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">Insights and Resources</a>
+                  <li class="topLevelX"> <a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">News and Resources</a>
                     <ul class="dropdown-menu withimg" role="menu">
-                      <li> <a class="bu-navz" href="../about.html">About Us <img src="../images/aboutUs.png" class="logo " alt="Responsive image"></a></li>
-                      <li> <a class="bu-navz" href="../mission.html">Mission <img src="../images/mission.jpg" class="logo " alt="Responsive image"></a></li>
-                      <li> <a class="bu-navz" href="../vision.html">Vision <img src="../images/vision.jpg" class="logo " alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="../resources.html">Resources <img src="../images/aboutUs.png" class="logo " alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="../movingTips.html">Moving Tips <img src="../images/mission.jpg" class="logo " alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="../news.html">News <img src="../images/vision.jpg" class="logo " alt="Responsive image"></a></li>
                     </ul>
                   </li>
                   <li class="topLevelX"> <a class="btn-link dropdown-toggle" data-toggle="dropdown" href="#">Contact us</a>
                     <ul class="dropdown-menu withimg" role="menu">
-                      <li> <a class="bu-navz" href="../about.html">Team <img src="../images/aboutUs.png" class="logo " alt="Responsive image"></a></li>
-                      <li> <a class="bu-navz" href="../mission.html">Careers <img src="../images/mission.jpg" class="logo " alt="Responsive image"></a></li>
-                      <li> <a class="bu-navz" href="../vision.html">Locations <img src="../images/vision.jpg" class="logo " alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="../teams.html">Teams <img src="../images/aboutUs.png" class="logo " alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="../careers.html">Careers <img src="../images/mission.jpg" class="logo " alt="Responsive image"></a></li>
+                      <li> <a class="bu-navz" href="../locations.html">Locations <img src="../images/vision.jpg" class="logo " alt="Responsive image"></a></li>
                     </ul>
                   </li>
                 </ul>
@@ -167,6 +168,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet" href="css/accordion.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
     </noscript>
