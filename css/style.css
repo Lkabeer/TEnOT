@@ -440,6 +440,25 @@ header {
   margin-bottom: 15px; }
 .bodyX .accordionX .panel-body p {
   text-align: justify; }
+.bodyX .nav-pills > li > a {
+  background-color: transparent;
+  color: #337ab7; }
+  .bodyX .nav-pills > li > a:hover, .bodyX .nav-pills > li > a:focus {
+    background-color: transparent;
+    color: #ec509a; }
+.bodyX .nav-pills > li.active > a, .bodyX .nav-pills > li.active > a:focus, .bodyX .nav-pills > li.active > a:hover {
+  background-color: transparent;
+  color: #ec509a; }
+.bodyX .tab-content img {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px; }
+.bodyX .tab-content p {
+  text-align: justify; }
+.bodyX .panel-title a {
+  color: #337ab7 !important; }
+.bodyX .panel {
+  background-color: transparent; }
 .bodyX .location-box {
   margin-top: 30px;
   text-align: center;

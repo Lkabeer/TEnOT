@@ -661,7 +661,7 @@ header {
 				}			
 			}
 		}
-		h3 a{
+		h3 a {
 			&:before {
 				@extend .fontAwesomeX;
 				content: "\f003";
@@ -679,6 +679,7 @@ header {
 			   content: "\f054";
 			}
 		}
+		
         .panel-body {
             img {
                 float: right;
@@ -691,6 +692,42 @@ header {
         }
 	}
 	// accordionX internal X-Team end
+	
+	// Tabbed PanelsX X-Team Start
+	.nav-pills>li>a {
+		background-color: transparent;
+		color: $color-main;
+		
+		&:hover, &:focus {
+			background-color: transparent;
+			color: $color-secondary;
+		}
+	}
+
+	.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+		background-color: transparent;
+        color: $color-secondary;
+	}
+	
+	.tab-content {
+		img {
+			float: right;
+			margin-left: 15px;
+			margin-bottom: 15px;
+		}
+		p {
+			text-align: justify;
+		}
+	}
+	
+	.panel-title a {
+		color: $color-main !important;
+	}
+	
+	.panel {
+		background-color: transparent;
+	}
+	// Tabbed PanelsX X-Team end
 	
 	// Team locations X-Team start
 	.location-box {
