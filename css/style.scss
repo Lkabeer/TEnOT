@@ -7,11 +7,20 @@ $font-highlight: 'Oswald', sans-serif;
 $color-main: #337ab7;
 $color-secondary: #ec509a;
 $color-gray: #292929;
+$color-gray-light: #6D6E72;
 
 @mixin break($length) {
 	@media (max-width: $length) {
 		@content;
 	}
+}
+
+@mixin fontAwesomeX($content: \f078) {
+    content: $content;
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
 }
 
 html, body {
@@ -48,11 +57,30 @@ h3 {
 	color: $color-main;
 }
 
+.fontAwesomeX {
+   font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: baseline;
+}
+
+.activeLink {
+    font-weight: 600;
+}
+
+.inActiveLinks {
+    color: $color-gray-light;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
+
 a {
     color: $color-main;
     text-decoration: none;
 
-    &:hover {
+    &:hover, &:focus {
         color: $color-secondary;
         text-decoration: none;
     }
@@ -616,6 +644,53 @@ header {
 		}
 	// accordionX X-Team Master end 
 	}
+	
+	// accordionX internal X-Team Start
+    .titlesAccordionX {
+		h4 a {
+			&:before {
+				@extend .fontAwesomeX;
+				content: "\f072";
+				visibility: hidden;
+			}
+			&.activeLink {
+				&:before {
+					@extend .fontAwesomeX;
+					content: "\f072";
+					visibility: visible;
+				}			
+			}
+		}
+		h3 a{
+			&:before {
+				@extend .fontAwesomeX;
+				content: "\f003";
+			}
+		}
+    }
+	.accordionX {
+		.panel-heading {
+			h4:before {
+                @extend .fontAwesomeX;
+                content: "\f078";
+			}
+            
+            .collapsed h4:before {
+			   content: "\f054";
+			}
+		}
+        .panel-body {
+            img {
+                float: right;
+                margin-left: 15px;
+                margin-bottom: 15px;
+            }
+            p {
+                text-align: justify;
+            }
+        }
+	}
+	// accordionX internal X-Team end
 	
 	// Team locations X-Team start
 	.location-box {

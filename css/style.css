@@ -27,10 +27,25 @@ body {
 h3 {
   color: #337ab7; }
 
+.fontAwesomeX, .bodyX .titlesAccordionX h4 a:before, .bodyX .titlesAccordionX h4 a.activeLink:before, .bodyX .titlesAccordionX h3 a:before, .bodyX .accordionX .panel-heading h4:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: baseline; }
+
+.activeLink {
+  font-weight: 600; }
+
+.inActiveLinks {
+  color: #6D6E72; }
+
+.visibilityHidden {
+  visibility: hidden; }
+
 a {
   color: #337ab7;
   text-decoration: none; }
-  a:hover {
+  a:hover, a:focus {
     color: #ec509a;
     text-decoration: none; }
 
@@ -407,6 +422,24 @@ header {
     background-image: url("../images/movingTips4.jpg"); }
   .bodyX .accordion.movingTipsX li:nth-child(5) {
     background-image: url("../images/movingTips5.jpg"); }
+.bodyX .titlesAccordionX h4 a:before {
+  content: "\f072";
+  visibility: hidden; }
+.bodyX .titlesAccordionX h4 a.activeLink:before {
+  content: "\f072";
+  visibility: visible; }
+.bodyX .titlesAccordionX h3 a:before {
+  content: "\f003"; }
+.bodyX .accordionX .panel-heading h4:before {
+  content: "\f078"; }
+.bodyX .accordionX .panel-heading .collapsed h4:before {
+  content: "\f054"; }
+.bodyX .accordionX .panel-body img {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px; }
+.bodyX .accordionX .panel-body p {
+  text-align: justify; }
 .bodyX .location-box {
   margin-top: 30px;
   text-align: center;
