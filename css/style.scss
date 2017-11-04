@@ -181,7 +181,7 @@ iframe {
     background: rgba(168, 169, 173, 0.42);
     padding: 20px;
     float: left;
-    font-size: 1.5em;
+    font-size: 1.8em;
     bottom: 120%;
 		
 	@include break(768px) {
@@ -204,6 +204,10 @@ header {
 .header-top {
 	div > div {
 //		display: inline-block;
+	}
+	
+	.btn {
+		padding-left: 0px;
 	}
 }
 

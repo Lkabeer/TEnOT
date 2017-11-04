@@ -136,7 +136,7 @@ iframe {
   background: rgba(168, 169, 173, 0.42);
   padding: 20px;
   float: left;
-  font-size: 1.5em;
+  font-size: 1.8em;
   bottom: 120%; }
   @media (max-width: 768px) {
     .carousel p {
@@ -150,6 +150,9 @@ header {
   z-index: 1000000;
   position: relative;
   border-bottom: 3px solid rgba(0, 0, 0, 0.22); }
+
+.header-top .btn {
+  padding-left: 0px; }
 
 .header-top-menu {
   font-size: 12px; }
