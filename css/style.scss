@@ -53,6 +53,10 @@ body {
     margin: 0;
 }
 
+.mt-10 {
+	margin-top: 10px;
+}
+
 h3 {
 	color: $color-main;
 }
@@ -512,7 +516,7 @@ header {
 	
 	// bodyHeader X-Team Master start 
 	.bodyHeader {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		
 		div {
 			background: #F1F1F1 url('../images/aboutHeader.jpg') center/cover no-repeat;
@@ -536,7 +540,7 @@ header {
 		}
 		
 		.img-main {
-			margin-top: 40px;
+//			margin-top: 40px;
 		}
 	}
 	// bodyHeader X-Team Master end 

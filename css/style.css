@@ -24,6 +24,9 @@ body {
 .m-0 {
   margin: 0; }
 
+.mt-10 {
+  margin-top: 10px; }
+
 h3 {
   color: #337ab7; }
 
@@ -352,7 +355,7 @@ header {
 .bodyX .row {
   margin: 0; }
 .bodyX .bodyHeader {
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   .bodyX .bodyHeader div {
     background: #F1F1F1 url("../images/aboutHeader.jpg") center/cover no-repeat;
     padding: 60px 0;
@@ -366,8 +369,6 @@ header {
   .bodyX .bodyBody h3 ~ p {
     font-size: 16px;
     line-height: 1.6; }
-  .bodyX .bodyBody .img-main {
-    margin-top: 40px; }
 .bodyX .accordion {
   margin: 0 auto; }
   .bodyX .accordion h2 {
