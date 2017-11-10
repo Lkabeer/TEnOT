@@ -28,16 +28,17 @@ body {
   margin-top: 10px; }
 
 h3 {
-  color: #337ab7; }
+  color: #1b75bc; }
 
-.fontAwesomeX, .bodyX .titlesAccordionX h4 a:before, .bodyX .titlesAccordionX h4 a.activeLink:before, .bodyX .titlesAccordionX h3 a:before, .bodyX .accordionX .panel-heading h4:before {
+.fontAwesomeX, #footer-content .siteMapX h4:before, #footer-content .siteMapX a:before, .bodyX .titlesAccordionX h3 a:before, .bodyX .contentAccordionX h4 a:before, .bodyX .contentAccordionX h4 a.activeLink:before, .bodyX .accordionX .panel-heading h4:before {
   font-family: FontAwesome;
   display: inline-block;
   padding-right: 3px;
   vertical-align: baseline; }
 
 .activeLink {
-  font-weight: 600; }
+  font-weight: 600;
+  color: #ec509a; }
 
 .inActiveLinks {
   color: #6D6E72; }
@@ -46,7 +47,7 @@ h3 {
   visibility: hidden; }
 
 a {
-  color: #337ab7;
+  color: #1b75bc;
   text-decoration: none; }
   a:hover, a:focus {
     color: #ec509a;
@@ -114,7 +115,6 @@ iframe {
   z-index: 0; }
 
 .carousel-caption h3 {
-  width: 100%;
   position: absolute;
   left: -20%;
   background: rgba(168, 169, 173, 0.42);
@@ -130,7 +130,6 @@ iframe {
       bottom: 350%; } }
 
 .carousel p {
-  width: 100%;
   position: absolute;
   left: 0%;
   background: rgba(168, 169, 173, 0.42);
@@ -221,7 +220,8 @@ header {
     border-color: transparent; }
   .navX .navbar-brand {
     padding: 0px 15px;
-    height: auto; }
+    height: auto;
+    margin-right: 20px; }
   .navX .navbar-toggle.collapsed {
     margin-top: 18px; }
   .navX .topLevelX > a {
@@ -350,10 +350,19 @@ header {
   background-position: center;
   background-repeat: repeat-x; }
   #moving-monuments + div {
-    background-color: #292929; }
+    background-color: #363636; }
 
 #footer-content {
   color: #fff; }
+  #footer-content .siteMapX h4:before {
+    content: "\f072"; }
+  #footer-content .siteMapX ul {
+    list-style-type: none;
+    padding-left: 30px; }
+  #footer-content .siteMapX li {
+    margin-top: 20px; }
+  #footer-content .siteMapX a:before {
+    content: "\f054"; }
 
 .bodyX .row {
   margin: 0; }
@@ -426,14 +435,21 @@ header {
     background-image: url("../images/movingTips4.jpg"); }
   .bodyX .accordion.movingTipsX li:nth-child(5) {
     background-image: url("../images/movingTips5.jpg"); }
-.bodyX .titlesAccordionX h4 a:before {
-  content: "\f072";
-  visibility: hidden; }
-.bodyX .titlesAccordionX h4 a.activeLink:before {
-  content: "\f072";
-  visibility: visible; }
 .bodyX .titlesAccordionX h3 a:before {
   content: "\f003"; }
+.bodyX .titlesAccordionX .nav-pills > li {
+  width: 100%; }
+.bodyX .titlesAccordionX img {
+  width: 50%;
+  margin: 15px; }
+.bodyX .contentAccordionX h4 a:before {
+  content: "\f072";
+  visibility: hidden; }
+.bodyX .contentAccordionX h4 a.activeLink:before {
+  content: "\f072";
+  visibility: visible; }
+.bodyX .contentAccordionX .tab-content {
+  margin-top: 60px; }
 .bodyX .accordionX .panel-heading h4:before {
   content: "\f078"; }
 .bodyX .accordionX .panel-heading .collapsed h4:before {
@@ -446,7 +462,7 @@ header {
   text-align: justify; }
 .bodyX .nav-pills > li > a {
   background-color: transparent;
-  color: #337ab7; }
+  color: #1b75bc; }
   .bodyX .nav-pills > li > a:hover, .bodyX .nav-pills > li > a:focus {
     background-color: transparent;
     color: #ec509a; }
@@ -460,7 +476,7 @@ header {
 .bodyX .tab-content p {
   text-align: justify; }
 .bodyX .panel-title a {
-  color: #337ab7 !important; }
+  color: #1b75bc !important; }
 .bodyX .panel {
   background-color: transparent; }
 .bodyX .location-box {

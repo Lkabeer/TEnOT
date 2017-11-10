@@ -4,10 +4,12 @@
 $font-main: 'Roboto', sans-serif;
 $font-highlight: 'Oswald', sans-serif;
 
-$color-main: #337ab7;
+$color-main: #1b75bc;
 $color-secondary: #ec509a;
 $color-gray: #292929;
 $color-gray-light: #6D6E72;
+$color-gray-footer: #363636;
+$color: #337ab7;
 
 @mixin break($length) {
 	@media (max-width: $length) {
@@ -70,6 +72,7 @@ h3 {
 
 .activeLink {
     font-weight: 600;
+	color: $color-secondary;
 }
 
 .inActiveLinks {
@@ -158,7 +161,7 @@ iframe {
 }
 
 .carousel-caption h3 {
-	width: 100%;
+//	width: 100%;
     position: absolute;
     left: -20%;
     background: rgba(168, 169, 173, 0.42);
@@ -175,7 +178,7 @@ iframe {
 	}
 }
 .carousel p {
-	width: 100%;
+//	width: 100%;
     position: absolute;
     left: 0%;
     background: rgba(168, 169, 173, 0.42);
@@ -312,6 +315,7 @@ header {
     .navbar-brand {
         padding: 0px 15px;
 		height: auto;
+		margin-right: 20px;
     }
 	
 	.navbar-toggle.collapsed  {
@@ -499,15 +503,43 @@ header {
     background-repeat: repeat-x;
     
     & + div {
-        background-color: $color-gray;
+        background-color: $color-gray-footer;
     }
 }
 
 #footer-content {
     color: #fff;
 	
-	a {
-//		color: $color-secondary;
+	.siteMapX {
+		
+		h4 {
+			&:before {
+				@extend .fontAwesomeX;
+				content: "\f072";
+//				visibility: hidden;
+			}
+		}
+		
+		ul {
+			list-style-type: none;
+			padding-left: 30px;
+		}
+		
+		li {
+			margin-top: 20px;
+		}
+		
+		a {
+//			color: #fff;
+//			
+//			&:hover {
+//				color: $color-main;
+//			}
+			&:before {
+				@extend .fontAwesomeX;
+				content: "\f054";
+			}
+		}
 	}
 }
 // footer X-Team Master end 
@@ -655,6 +687,23 @@ header {
 	
 	// accordionX internal X-Team Start
     .titlesAccordionX {
+
+		h3 a {
+			&:before {
+				@extend .fontAwesomeX;
+				content: "\f003";
+			}
+		}
+		.nav-pills>li {
+			width: 100%;
+		}
+		
+		img { 
+			width: 50%;
+			margin: 15px;
+		}
+    }
+	.contentAccordionX {
 		h4 a {
 			&:before {
 				@extend .fontAwesomeX;
@@ -669,13 +718,10 @@ header {
 				}			
 			}
 		}
-		h3 a {
-			&:before {
-				@extend .fontAwesomeX;
-				content: "\f003";
-			}
+		.tab-content {
+			margin-top: 60px;
 		}
-    }
+	}
 	.accordionX {
 		.panel-heading {
 			h4:before {
