@@ -808,7 +808,7 @@ header {
 		}
 	}
 	
-	input.form-control[type="submit"] {
+	input[type="submit"] {
 		background-color: $color-main;
 		color: #fff;
 	}
