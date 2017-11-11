@@ -807,6 +807,11 @@ header {
 			overflow: hidden;
 		}
 	}
+	
+	input.form-control[type="submit"] {
+		background-color: $color-main;
+		color: #fff;
+	}
 	// Team locations X-Team end
 
 }

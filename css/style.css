@@ -497,3 +497,6 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
+.bodyX input.form-control[type="submit"] {
+  background-color: #1b75bc;
+  color: #fff; }
